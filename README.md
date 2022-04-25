@@ -1,5 +1,6 @@
 # Struts2-
-Struts2漏洞POC , 以及部分经验证的官方推荐的缓解措施，便于不升级组件情况下阻止漏洞
+Struts2漏洞POC , 以及部分经验证的官方推荐的缓解措施，便于不升级组件情况下阻止漏洞。
+缓解措施仅用于缓解漏洞影响，可能对系统存在未知影响；建议先评估再使用，并在配置后跑全流程回归，避免因更改配置对系统造成影响。
 
 
 # **S2-001**
@@ -84,7 +85,7 @@ struts.xml或struts.properties中关闭altSyntax，不强制解析OGNL表达式
   </interceptor-ref>
   ```
 
-  strut.xml中增加拦截器**（已验证）**
+  strut.xml中增加拦截器
 
 ![image-20220421145415172](https://user-images.githubusercontent.com/33454436/165062710-e387aa03-aa8d-4d83-b0e4-ab3fc1eba934.png)
 
